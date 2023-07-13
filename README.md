@@ -12,16 +12,16 @@ sudo docker run -d -p 8080:8080 <IMAGE_ID>
 - Open a python console with poetry in a new terminal: `poetry run python`
 	In the console:
 	- Post request
-	requests.post('http://10.0.0.78:8080/post', '{"x_value": 1.88, "calculation_type": "red", "y_translation": 7}').text
+	`requests.post('http://10.0.0.78:8080/post', '{"x_value": 1.88, "calculation_type": "red", "y_translation": 7}').text`
 
 	- Get request to show all table
-	requests.get('http://10.0.0.78:8080/calculations').text
+	`requests.get('http://10.0.0.78:8080/calculations').text`
 
 	- Get request with id
-	requests.get('http://10.0.0.78:8080/calculations/1').text
+	`requests.get('http://10.0.0.78:8080/calculations/1').text`
 
 	- Get request with since query
-	requests.get('http://10.0.0.78:8080/calculations?since=100').text
+	`requests.get('http://10.0.0.78:8080/calculations?since=100').text`
 
 
 ### Notes
