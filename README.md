@@ -1,12 +1,12 @@
 ### Docker:
 - To build locally
-sudo docker build -t alice-flask .
+`sudo docker build -t alice-flask` .
 
 - Get the image id from this
-sudo docker image ls
+`sudo docker image ls`
 
 - To run on port 8080
-sudo docker run -d -p 8080:8080 <IMAGE_ID>
+`sudo docker run -d -p 8080:8080 <IMAGE_ID>`
 
 ### To test (also in pytests in Docker)
 - Open a python console with poetry in a new terminal: `poetry run python`
